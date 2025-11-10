@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Catálogo con figuras, figcaption, filtros CSS, image map e imágenes adaptativas de temática indie." />
+  <meta name="author" content="Estudiante" />
+  <meta name="keywords" content="videojuegos indies, HTML5, CSS3, responsive, SVG, image map" />
+  <meta name="theme-color" content="#0b0f1a" />
+  <meta property="og:title" content="IndieBits | Catálogo" />
+  <meta property="og:description" content="Catálogo con figuras, figcaption, filtros CSS, image map e imágenes adaptativas de temática indie." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+  <link rel="icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="css/styles.css" />
+  <title>IndieBits | Catálogo</title>
+</head>
+
+<body>
+
+<header class="header" role="banner">
+  <div class="wrap">
+    <a href="index.html" class="brand" aria-label="Ir a inicio">
+      <img src="svg/logo.svg" alt="Logo del sitio IndieBits" width="128" height="36" />
+      <span>IndieBits</span>
+    </a>
+    <nav aria-label="principal">
+      <ul>
+        <li><a href="index.html" >Inicio</a></li>
+        <li><a href="galeria.html" aria-current="page">Catálogo</a></li>
+        <li><a href="contacto.html" >Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap" style="max-width: var(--max); margin: 0 auto;">
+  <section class="card" aria-labelledby="gal">
+    <h1 id="gal">Catálogo Indie</h1>
+    <p>En este apartado podrás ver entradas actuales y estrenos recientes</p>
+    <div class="grid" role="list">
+      <figure role="listitem">
+        <img src="img/galeria-1.jpg" alt="Hollow Kight Silksong">
+        <figcaption><strong>Hollow Kight Silksong</strong> — Estreno de los mas esperados en 7 años.</figcaption>
+      </figure>
+      <figure role="listitem">
+        <img src="img/galeria-2.jpg" alt="Expedition 33">
+        <figcaption><strong>Expedition 33</strong> — Un pequeño grupo demostrando a Ubisoft a hacer su trabajo.</figcaption>
+      </figure>
+      <figure role="listitem">
+        <img src="img/galeria-3.jpg" alt="Peak">
+        <figcaption><strong>Peak</strong> — Nadie esperaba nada y termino generando un dineral.</figcaption>
+      </figure>
+      <figure role="listitem">
+        <img src="img/galeria-4.jpg" alt="Celeste">
+        <figcaption><strong>Celeste</strong> — De los mejores aspectos artisticos en el metroidvania.</figcaption>
+      </figure>
+      <figure role="listitem">
+        <picture>
+          <source srcset="img/hero-1024.jpg" media="(min-width: 900px)">
+          <source srcset="img/hero-640.jpg" media="(min-width: 500px)">
+          <img src="img/hero-320.jpg" alt="Demostración adaptativa indie" width="640" height="360">
+        </picture>
+        <figcaption>Ejemplo de <code>&lt;picture&gt;</code> + <code>srcset</code> con un banner indie.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="card" aria-labelledby="mapa">
+    <h2 id="mapa">Mapa de navegación (Image Map)</h2>
+    <p>Haz clic en las zonas para moverte por el sitio.</p>
+    <div class="map-wrap">
+      <img src="img/mapa.jpg" alt="Mapa interactivo con áreas a Inicio, Catálogo y Contacto" usemap="#sitio" width="1024" height="512">
+      <div class="area-tip">💡 Prueba las 3 zonas</div>
+      <map name="sitio">
+        <area shape="rect" coords="50,80,350,220" href="index.html" alt="Ir a Inicio" title="Inicio">
+        <area shape="rect" coords="370,80,690,220" href="galeria.html" alt="Ver Catálogo" title="Catálogo">
+        <area shape="rect" coords="710,80,980,220" href="contacto.html" alt="Ir a Contacto" title="Contacto">
+      </map>
+    </div>
+  </section>
+
+  <section class="card" aria-labelledby="svg">
+    <h2 id="svg">Logo SVG</h2>
+    <p>El logo del portal es un <strong>SVG personal</strong> con una pequeña animación. También se muestra como imagen externa:</p>
+    <figure>
+      <img src="svg/logo.svg" alt="Logo SVG IndieBits">
+      <figcaption>SVG escalable, ideal para interfaces de juegos.</figcaption>
+    </figure>
+  </section>
+</main>
+
+<footer role="contentinfo">
+  <div class="wrap">
+    <p>&copy; 2025 IndieBits — Jhordams Spencer Valdivia Quenta.</p>
+    <p>Diseño Web - Universidad Continental</p>
+  </div>
+</footer>
+</body>
+</html>
+

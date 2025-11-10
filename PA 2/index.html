@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sitio académico sobre videojuegos indies con imágenes adaptativas, SVG y diseño responsive." />
+  <meta name="author" content="Estudiante" />
+  <meta name="keywords" content="videojuegos indies, HTML5, CSS3, responsive, SVG, image map" />
+  <meta name="theme-color" content="#0b0f1a" />
+  <meta property="og:title" content="IndieBits | Inicio" />
+  <meta property="og:description" content="Sitio académico sobre videojuegos indies con imágenes adaptativas, SVG y diseño responsive." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+  <link rel="icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="css/styles.css" />
+  <title>IndieBits | Inicio</title>
+</head>
+
+<body>
+
+<header class="header" role="banner">
+  <div class="wrap">
+    <a href="index.html" class="brand" aria-label="Ir a inicio">
+      <img src="svg/logo.svg" alt="Logo del sitio IndieBits" width="128" height="36" />
+      <span>IndieBits</span>
+    </a>
+    <nav aria-label="principal">
+      <ul>
+        <li><a href="index.html" aria-current="page">Inicio</a></li>
+        <li><a href="galeria.html" >Catálogo</a></li>
+        <li><a href="contacto.html" >Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap" style="max-width: var(--max); margin: 0 auto;">
+  <section class="hero" aria-labelledby="bienvenida">
+    <div class="card">
+      <h1 id="bienvenida">Videojuegos Indies: creatividad sin límites</h1>
+      <p>Bienvenidos a esta humilde pagina, llena de pasion por los videojuegos, sumergete en este mundo con noticias relacionadas a este arte infravalorado, esta pagina esta enm desarrollo asi que cuentanos como podemos mejorarlo, un saludo y gracias (^_^)/</p>
+      <a class="btn" href="galeria.html">Ver catálogo</a>
+    </div>
+
+    <figure class="card">
+      <img src="img/banner_indie.png" alt="Banner de videojuegos indies" style="width:100%; height:auto;">
+    </figure>
+  </section>
+
+  <section aria-labelledby="tabla" class="card">
+    <h2 id="tabla">Lanzamientos indie destacados</h2>
+    <div class="table-wrap">
+      <table aria-describedby="tabla">
+        <thead>
+          <tr>
+            <th>Juego</th>
+            <th>Género</th>
+            
+            <th>Sinopsis</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Peak</td>
+            <td>Aventura</td>
+            
+            <td>Explora cumbres heladas y resuelve acertijos ambientales para desenterrar secretos antiguos.</td>
+          </tr>
+          <tr>
+            <td>Hollow Knight: Silksong</td>
+            <td>Metroidvania</td>
+            
+            <td>Secuela muy esperada: combates ágiles, biomas nuevos y la protagonista Hornet con un estilo más vertical.</td>
+          </tr>
+          <tr>
+            <td>Expedition 33</td>
+            <td>RPG narrativo</td>
+            
+            <td>Un viaje por un mundo en ruinas para romper un ciclo de destrucción; decisiones que impactan al grupo.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+</main>
+
+<footer role="contentinfo">
+  <div class="wrap">
+    <p>&copy; 2025 IndieBits — Jhordams Spencer Valdivia Quenta.</p>
+    <p>Diseño Web - Universidad Continental</p>
+  </div>
+</footer>
+</body>
+</html>
+

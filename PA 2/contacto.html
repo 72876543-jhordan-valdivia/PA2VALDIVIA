@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- METADATOS BÁSICOS -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Formulario de contacto accesible para enviar feedback sobre videojuegos indies." />
+  <meta name="author" content="Jhordams Spencer Valdivia Quenta" />
+  <meta name="keywords" content="videojuegos indies, HTML5, CSS3, responsive, formulario, SVG" />
+  <meta name="theme-color" content="#0b0f1a" />
+  <meta property="og:title" content="IndieBits | Contacto" />
+  <meta property="og:description" content="Formulario de contacto accesible para enviar feedback sobre videojuegos indies." />
+  <meta property="og:type" content="website" />
+
+  <!-- ICONOS Y ESTILOS -->
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+  <link rel="icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="css/styles.css" />
+  <title>IndieBits | Contacto</title>
+</head>
+
+<body>
+
+  <!-- ENCABEZADO -->
+  <header class="header" role="banner">
+    <div class="wrap">
+      <a href="index.html" class="brand" aria-label="Ir a inicio">
+        <img src="svg/logo.svg" alt="Logo del sitio IndieBits" width="128" height="36" />
+        <span>IndieBits</span>
+      </a>
+      <nav class="menu" aria-label="principal">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="galeria.html">Catálogo</a></li>
+          <li><a href="contacto.html" aria-current="page">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="main wrap" style="max-width: var(--max); margin: 0 auto;">
+
+    <!-- SECCIÓN DE CONTACTO -->
+    <section class="contenedor section-1 card" aria-labelledby="contacto">
+      <h1 id="contacto">Contacto</h1>
+      <p>Envíanos tus ideas, comentarios o sugerencias sobre videojuegos indies. Nos encantaría saber tu opinión y mejorar este proyecto académico.</p>
+
+      <!-- FORMULARIO -->
+      <form action="#" method="post" aria-describedby="formHelp">
+
+        <!-- FILA 1: NOMBRE Y EMAIL -->
+        <div class="form-row">
+          <div>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+          </div>
+          <div>
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" placeholder="tu@correo.com" required>
+          </div>
+        </div>
+
+        <!-- FILA 2: INTERÉS Y TELÉFONO -->
+        <div class="form-row">
+          <div>
+            <label for="asunto">Interés</label>
+            <select id="asunto" name="asunto" required>
+              <option value="">Selecciona una opción</option>
+              <option>Donar al proyecto</option>
+              <option>Enviar feedback sobre juegos</option>
+              <option>Aplicar como colaborador</option>
+            </select>
+          </div>
+          <div>
+            <label for="tel">Teléfono</label>
+            <input type="tel" id="tel" name="tel" placeholder="+51 999 999 999" pattern="[0-9 +]+" aria-describedby="telHelp">
+          </div>
+        </div>
+
+        <!-- MENSAJE -->
+        <div>
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos tu idea o sugerencia..." required></textarea>
+        </div>
+
+        <!-- ACEPTAR POLÍTICA -->
+        <div>
+          <label>
+            <input type="checkbox" name="acepto" required>
+            Acepto la política de privacidad
+          </label>
+        </div>
+
+        <!-- AYUDA Y BOTÓN -->
+        <p id="formHelp" class="help">Este formulario es solo con fines académicos y de práctica visual.</p>
+        <button class="btn" type="submit">Enviar</button>
+
+      </form>
+    </section>
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer role="contentinfo">
+    <div class="wrap">
+      <p>&copy; 2025 IndieBits — Jhordams Spencer Valdivia Quenta.</p>
+      <p>Diseño Web - Universidad Continental</p>
+    </div>
+  </footer>
+
+</body>
+</html>
+
