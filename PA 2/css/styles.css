@@ -1,11 +1,11 @@
 
-/* styles.css - Tema: Oscuro elegante (inspirado en Silksong) */
+/* stilo tipo Hollow Knight Silksong) */
 :root{
   --bg-1:#0b0f1a;
   --bg-2:#0f1524;
   --card:#111828;
-  --primary:#c4a86b; /* dorado sutil */
-  --accent:#8aa4ff;  /* azul frío */
+  --primary:#c4a86b;
+  --accent:#8aa4ff;
   --text:#e6e7ee;
   --muted:#b8c0d9;
   --max:1100px;
